@@ -1,0 +1,50 @@
+.account-settings-head{
+    background: url(/img/blank.jpg), rgb(7, 70, 70);
+    background-blend-mode: overlay;
+padding: 15px;
+}
+
+.account-settings-body{
+padding: 15px;
+background: url(/img/blank.jpg);
+background-blend-mode: overlay;
+
+.account-info{
+    padding: 10px;
+
+    span{
+        color: blue;
+        float: right;
+        cursor: pointer;
+    }
+}
+}
+
+.account-change{
+    padding: 15px;
+}
+
+.update-msg{
+    padding: 15px;
+}
+.update-stuff{
+// position: relative;
+
+// left: -200px;
+opacity: 0;
+animation: stuff 350ms linear;
+animation-fill-mode: forwards;
+
+
+}
+
+
+@keyframes stuff{
+
+100%{
+    opacity: 1;
+    transform: scale(1)
+}
+
+
+}

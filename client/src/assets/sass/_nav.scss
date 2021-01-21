@@ -1,0 +1,143 @@
+// .side-nav{
+//     position: absolute;
+//     left: -500px;
+//     top: 0;
+//     z-index: 50;
+//     height: 100vh;
+//     background: rgba(255, 255, 255, 0.925);
+//     color: black;
+//     width: 60%;
+//     display:none;
+//     box-shadow: 1px 1px 10px black;
+//     animation: slideFromLeft 350ms linear;
+//     animation-fill-mode: forwards;
+
+
+//     div{
+//         font-size: 2.4rem;
+//     }
+//     div:hover{
+//         color: teal;
+//     }
+// }
+// .cart-side{
+//     display: flex;
+//     border: 1px dashed grey;
+//     align-items: center;
+// }
+
+
+
+.navWrapper{
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+  
+   
+  }
+  .navBackdrop{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+  z-index: 100;
+  opacity: 0;
+  animation: stuff 300ms linear;
+  animation-fill-mode: forwards;
+  background: url('/img/modal.png') ;
+  background-size: 300px;
+ 
+ 
+   
+  
+  }
+
+  .logo{
+    cursor: pointer;
+  }
+  
+  .navBox{
+    //   opacity: 0;
+    // animation: stuff2 300ms linear;
+    // animation-fill-mode: forwards;
+      position: absolute;
+    top: 0;
+    left: -250px;
+ 
+  min-height: 100%;
+
+  
+    width: 60%;
+    max-width: 700px;
+    background: white;
+    box-shadow:0 0 10px rgba(0,0,0,0.25);
+    z-index: 101;
+        animation: slideFromLeft 350ms linear;
+    animation-fill-mode: forwards;
+    // overflow-y: scroll;
+    //  padding: 40px; 
+ 
+  
+    div{
+      color: rgb(1, 1, 56);
+        font-size: 2.4rem;
+        text-shadow: 5px 5px 2px rgba(105, 105, 105, 0.425);
+    }
+    div:hover{
+        color: teal;
+    }
+
+
+
+
+
+  }
+//   .hamburger-container{
+//    border: 2px dashed blue;
+    
+//   }
+// .hamburger:hover{
+//   border: 2px dashed black;
+//   border-radius: 10px;
+// }
+.hamburger{
+
+display: none;
+
+}
+.hamburger-icon{
+  padding: 5px;
+  margin-top: 7px;
+  color: teal;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.hamburger-icon:hover{
+
+  border: 2px solid rgba(8, 11, 51, 0.068);
+  border-radius: 5px;;
+  color: rgb(2, 92, 92);
+  background: rgba(128, 128, 128, 0.048);
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes slideFromLeft{
+    
+  
+    100% { 
+    left: 0px
+                }
+        }

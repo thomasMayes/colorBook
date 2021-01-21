@@ -1,0 +1,120 @@
+.sell-page{
+height: 100%;
+background: url('/img/blank.jpg');
+
+    
+}
+.sell-cont{
+    min-height: 92%;
+    // background: url('/img/blank.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-nav{
+    box-shadow: 1px 1px 10px black;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.add-item-cont{
+width: 80%;
+border-radius: 10px;
+
+
+.add-item-banner{
+    background: url(/img/blank.jpg), rgb(7, 70, 70);
+    background-blend-mode: overlay;
+    background-size: 200px;
+    padding: 15px;
+       color: white;
+       font-size: 2rem;
+}
+.add-item-footer{
+    background: url(/img/blank.jpg), rgb(7, 70, 70);
+    background-blend-mode: overlay;
+    background-size: 200px;
+    padding: 15px;
+       color: white;
+       font-size: 2rem;
+}
+
+textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin: 0;
+    vertical-align: top;
+}
+
+input{
+    width: 100%; 
+    padding: 10px;
+}
+#inputfield{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+#color-input{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+.fileLabel{
+    background: rgb(223, 233, 233);
+    color: rgb(102, 71, 88);
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 0;
+}
+
+
+}
+
+.fileUploadStuff{
+   
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:   url(/img/blank.jpg), rgb(68, 80, 80);
+    background-blend-mode: overlay;
+    background-size: 200px;
+   
+}
+
+.imagePreview{
+
+max-height: 150px; 
+width: auto;
+}
+.img-cont{
+    background: url(/img/blank.jpg), rgb(43, 45, 48);
+    background-blend-mode: overlay;
+    background-size: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+}
+
+.add-item-mat{
+    padding: 20px;
+    
+ 
+}

@@ -1,0 +1,370 @@
+.navbar2{
+    // background: url(/img/new.jpg), rgba(205, 199, 218, 0.596);
+    // background-size: 300px;
+    // background-blend-mode: overlay;
+
+    @include customBackground;
+  top: 0; 
+  width: 100%;
+  border-bottom: #0b1220 10px solid;
+  overflow: hidden;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  
+.collapseNav{
+
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+  .nav-stuff{
+    height: 100%;
+   
+     display: flex;
+     justify-content:center;
+     width: 60%;
+  
+
+  //   justify-content: center;
+  // align-items: center;
+  }
+  .logo{
+    width: 300px;
+  }
+.user-info{
+  background:   url(/img/blank.jpg), rgb(68, 80, 80);
+  background-blend-mode: overlay;
+  background-size: 200px;
+  box-shadow: 1px 1px 5px rgb(71, 71, 71);
+  position: absolute;
+  top:-200px;
+  transition: ease-in;
+animation: slidedown 350ms linear;
+animation-fill-mode: forwards;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  font-size:1.8rem;
+  border-radius: 0 0 15px 15px;
+  z-index:3;
+
+  div{
+ color: white;
+ cursor: pointer;
+
+  }
+ 
+
+  div:hover{
+color: rgb(168, 204, 204);
+cursor: pointer;
+  }
+}
+
+.user-link{
+  
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.user-link:hover{
+  transform: translateY(-1px);
+text-shadow: rgba(143, 143, 143, 0.411) 2px 2px 1px ;
+}
+  .test{
+    transform: skewX(-30deg);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .cart-num{
+    background: rgba(18, 167, 130, 0.452);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    animation: swell 350ms linear;
+    font-size: 1.2rem;
+
+  }
+
+.skew-box{
+ border-right: 2px rgb(69, 81, 87) solid;
+  width: 25%;
+  transform: skewX(30deg);
+ 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  font-family: 'NunitoSans';
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.skew-box:hover{
+  background: rgba(9, 132, 136, 0.109);
+
+}
+
+
+  .logo{
+  
+    font-weight: 800;
+    font-size: 3rem
+  }
+  .cart-box{
+    margin-right: 10px;
+    width: 10%;
+    height: 100%;
+    cursor:pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: 1.5rem;
+  .cb-stuff{
+   
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .cart-info{
+   
+    height: 40px;
+ 
+    margin-right: 5px;
+  }
+  
+  
+  
+  }
+  
+
+   
+
+  
+}
+.search-cont{
+  display:flex;
+  align-items: center;
+  border-bottom:  1px solid rgba(0,0,0,.125);
+padding-left: 15px;
+background: #f1f1f1;
+  i{
+    color: grey;
+    transform: scale(1.5);
+    margin-right: 10px;;
+    background: white;
+  }
+}
+
+.search-cont:focus-within{
+  outline:  rgb(0, 128, 128) auto 1px;
+}
+.searchbar{
+  width: 100%;
+   padding: 10px;
+   background: #f1f1f1;
+   background-blend-mode: overlay;
+   border: .5px solid transparent;
+   
+  //  border-bottom:  1px solid rgba(0,0,0,.125);
+}
+
+.searchbar:focus{
+  box-shadow: transparent;
+  border: 1px solid transparent;
+  outline: none
+
+}
+
+.searchbar::placeholder{
+  color: rgb(167, 167, 167);
+ 
+}
+
+.stickyStuff{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // z-index: 1;
+  box-shadow: 1px 1px 10px black;
+  background: white;
+}
+
+.item-list{
+padding-top: 180px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+min-height: 100%;
+  // display: flex;
+  // justify-content: space-evenly;
+  // flex-wrap: wrap;
+
+  // background: url(/img/blank2.jpg);
+  // background-size: cover;
+  // background-size: 300px
+  // ;
+  // background-blend-mode: overlay;
+  @include customBackground 
+}
+.shop-left, .shop-right{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+
+
+.shop-item-mat{
+  padding: 20px;
+  border: 2px solid #16161669;
+ background: #030b1f;
+ background: url(/img/blank.jpg), #070a11f8;
+ background-blend-mode: overlay;
+ background-size: 200px;
+  // box-shadow: 1px 1px 10px 1px #161616;
+  width: 100%;
+  margin-bottom: 10px;;
+
+  img{
+    border: 2px #ffffff57 ridge;
+    cursor: pointer;
+
+  }
+}
+.customCard{
+  // max-width: 30%; 
+
+  //  border: 0px solid #161616;
+  //  box-shadow: 1px 1px 10px 1px #161616;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: url(/img/new.jpg), rgba(205, 199, 218, 0.596);
+   box-shadow: 1px 1px 10px 1px #161616;
+   padding: 10px;
+   border-radius: 5px;
+   @include customBackground;
+}
+
+.cardfoot{
+  width: 100%;
+  display: grid;
+ 
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+
+  h4{
+    text-align: center;
+  }
+
+}
+
+.store{
+ height: 100%;
+}
+
+// .card{
+// width: 30%!important;
+// min-height: 400px;
+// border: none !important;
+// background: transparent!important;
+// }
+// .card-img-top{
+//   border: .5px solid #161616 !important;
+// }
+
+// .card-body{
+//   background: #dfdfdf;
+//   border: none !important;
+//   // border-left: solid 5px #161616;
+//   // border-right: solid 5px #161616;
+// }
+// .card-footer{
+//   border: 5px solid #161616;
+//   border-top: none!important;
+// }
+.pagination{
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  // background: url(/img/new.jpg), rgba(205, 199, 218, 0.596);
+background-blend-mode: overlay;
+background-size: 300px;
+  padding: 5px;
+  @include customBackground;
+
+  .page-link{
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+  }
+.page-link:hover{
+  color:rgb(5, 36, 71);
+  background: rgba(9, 132, 136, 0.109);
+}
+  // .page-link:active{
+  //   background: red;
+  // }
+}
+// .modal{
+//   display: flex !important;
+//   justify-content: center;
+//   align-items: center;
+
+// }
+// .modal-dialog{
+// margin: 0px !important;
+// max-width: 70% !important;
+
+// img{
+//   width: 100%;
+// }
+
+// }
+
+
+        
+@keyframes swell{
+  50% { 
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+            }
+        
+    100% { 
+        width: 30px;
+        height: 30px;
+        font-size: 1.3rem;
+                }
+        }
+
+        @keyframes slidedown{
+         
+                
+            100% { 
+                top:0px;
+               
+                        }
+                }

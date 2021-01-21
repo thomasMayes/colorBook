@@ -1,0 +1,18 @@
+@mixin customBackground {
+    background:  url(/img/blank.jpg);
+    background-size: 167px;
+    background-blend-mode: multiply;
+}
+@mixin customBackgroundTwo {
+    background: url(/img/pollucktile.jpg) rgb(7, 70, 70);
+    background-blend-mode: overlay;
+    background-size: 300px;
+}
+
+@mixin canvasBackground {
+    background:  url(/img/blank.jpg);
+    background-blend-mode: overlay;
+    background-size: 167px;
+}
+
+$accent-color : #09adb5

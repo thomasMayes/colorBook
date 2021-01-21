@@ -1,0 +1,278 @@
+.landingContainer{
+   
+    height: 100vh;
+    width: 100vw;
+overflow: hidden;
+}
+
+.callToAction{
+    position: absolute;
+    top: 45vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 1px 1px 10px #2b2a2a;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+    button{
+        background: #093563;
+
+        border: 2px solid #07064175;
+        margin-top: 15px;;
+        padding: 5px 25px;
+        color: rgb(251, 251, 251);
+        font-size: 1.5rem;
+        font-family: source code pro light;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: box-shadow .45s ease-in-out, transform .45s ease-in-out
+        // box-shadow: 13px 13px 3px #b7b9be;
+    }
+    button:hover{
+
+        background: #09adb5;
+        color: white;
+        box-shadow: 7px 7px 7px #b7b9be;
+        transform: translateY(-3px);
+    }
+}
+
+
+.hero{
+    background: url('/img/blank.jpg');
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    // z-index: -5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+.imageCont{
+    
+ border-radius: 50%;
+   
+height: 900px;
+width: 900px;
+// position: absolute;
+z-index:1;
+img{
+    animation: orbit 300000ms infinite;
+}
+
+ animation: orbit 300000ms infinite;
+:nth-child(1){
+    position: relative;
+    top: -100px;
+    left: -100px;
+   z-index: 4;
+    transform: rotate(45deg);
+}
+:nth-child(2){
+   
+    position: relative;
+    top: -200px;
+    left: -100px;
+    transform: rotate(-45deg);
+z-index:6;
+}
+:nth-child(3){
+    position: relative; 
+    
+    top: -200px;
+    left: -300px;
+    
+}
+:nth-child(4){
+
+    position: relative;
+    top: -500px;
+    left: 300px;
+    
+    transform: rotate(135deg)
+}
+:nth-child(5){
+    
+        position: relative;
+        top: -500px;
+        left: 900px;
+        
+        transform: rotate(-135deg)
+    }
+
+    :nth-child(6){
+        
+            position: relative;
+            top: -230px;
+            left: 350px;
+            
+            transform: rotate(35deg)
+        }
+
+        :nth-child(7){
+          
+                position: relative;
+                top: -400px;
+                left: 300px;
+                
+                transform: rotate(305deg)
+            }
+            :nth-child(8){
+                
+                    position: relative;
+                    top: -500px;
+                    left: -600px;
+                    
+                    transform: rotate(5deg)
+                }
+
+
+
+}
+
+.imageCont2{
+
+display: block;
+    img{
+        animation: orbit-2 250000ms infinite;
+    }
+
+    position: absolute; 
+    
+    height: 400px;
+    width: 400px;
+   
+    border-radius: 50%;
+    z-index: 0;
+
+    
+// img{
+//     animation: orbit 300000ms infinite;
+// }
+
+    animation: orbit-2 400000ms infinite;
+   :nth-child(1){    
+     
+       
+       position: relative;
+       bottom: 00px;
+       left: -250px;
+       transform: rotateZ(90deg);
+       z-index: 46;
+    //    animation: orbit 300000ms infinite;
+   }
+   :nth-child(2){
+   
+       
+    position: relative;
+    bottom: 00px;
+    left: -0px;
+    z-index:10;
+    // transform: rotate(-45deg);
+    // animation: orbit 300000ms infinite;
+   }
+   :nth-child(3){
+  
+       position: relative;
+       top: -700px;
+       right: -50px;
+       transform: rotate(-45deg);
+    //    animation: orbit-2 300000ms infinite;
+   }
+   :nth-child(4){ 
+  
+    position: relative;
+    top: -700px;
+    right: -300px;
+    transform: rotate(45deg);
+    // animation: orbit 300000ms infinite;
+   }
+   
+   
+   
+   
+   }
+.imageCont3{
+    position: absolute;
+    
+    height: 800px;
+    width: 1200px;
+   
+    border-radius: 50%;
+   
+
+    :nth-child(1){ 
+        
+        position: relative;
+        top: -0px;
+        left: -300px;
+        transform: rotate(45deg);
+         animation: orbit 300000ms infinite;
+       }
+       :nth-child(2){ 
+     
+        position: relative;
+        bottom: -460px;
+        left: -800px;
+        transform: rotate(45deg);
+        animation: orbit-2 300000ms infinite;
+       }
+       :nth-child(3){ 
+     
+        position: relative;
+        bottom: 50px;
+        left: 330px;
+        transform: rotate(-45deg);
+        animation: orbit 300000ms infinite;
+       }
+       :nth-child(4){ 
+      
+        position: relative;
+        bottom: -200px;
+        left: 1150px;
+        transform: rotate(-95deg);
+        animation: orbit-2 300000ms infinite;
+       }
+
+
+
+
+}
+
+
+
+    img{
+        width: 400px;
+        height: auto;
+        
+    }
+}
+
+
+
+
+@keyframes orbit{
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin{
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes orbit-2{
+
+    100%{
+        transform: rotate(-360deg);
+    }
+}
